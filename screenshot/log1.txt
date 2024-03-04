@@ -1,0 +1,500 @@
+   72  cd c:
+   73  cd 21feb
+   74  cd ..
+   75  mkdir 23feb
+   76  cd 23feb/
+   77  git init
+   78  vi hello.txt
+   79  git add .
+   80  git commit -m "first commit"
+   81  vi hello.txt
+   82  git add .
+   83  git commit -m "second commit on main branch"
+   84  git log --oneline
+   85  git checkout -b dev1
+   86  git branch
+   87  cat hello.txt
+   88  vi hello.txt
+   89  git add .
+   90  git commit -m "first commit"
+   91  git log --oneline
+   92  vi hello.txt
+   93  git add .
+   94  git commit -m "second commit on dev1"
+   95  vi hello.txt
+   96  cat hello.txt
+   97  git checkout master
+   98  cat hello.txt
+   99  git checkout -b dev2
+  100  git log --oneline
+  101  git checkout master
+  102  git checkout dev1
+  103  git checkout -b dev21
+  104  git log --oneline
+  105  vi hello.txt
+  106  git add .
+  107  git commit -m "first commit dev21"
+  108  cat hello.txt
+  109  git branch
+  110  git checkout dev1
+  111  git merge dev21 dev1
+  112  git status
+  113  git log --oneline
+  114  git branch -d dev2
+  115  git branch
+  116  git checkout master
+  117  vi hello.txt
+  118  git add .
+  119  git commit -m "third commit added "
+  120  git log --oneline
+  121  git checkout dev21
+  122  cd c:
+  123  mkdir 23project
+  124  cd 23project/
+  125  git init
+  126  vi new
+  127  vi new.c
+  128  git add .
+  129  git commit -m "added the main code"
+  130  git rm new
+  131  ls
+  132  cd c:
+  133  cd 23feb
+  134  cd c:
+  135  cd 23project
+  136  ls
+  137  vi new.c
+  138  git add.
+  139  git add .
+  140  git commit -m "added switch operator"
+  141  cat new.c
+  142  git checkout -b case1
+  143  vi new.c
+  144  cat new.c
+  145  git checkout -b case2
+  146  ls
+  147  cat new.c
+  148  git checkout case1
+  149  ls
+  150  git add .
+  151  git commit -m "added two cases in branch case1"
+  152  git checkout case2
+  153  ls
+  154  vi new.c
+  155  cat new.c
+  156  vi new.c
+  157  git add .
+  158  git commit -m "added two cases in branch case2"
+  159  cat new.c
+  160  git checkout case1
+  161  cat new.c
+  162  git --oneline
+  163  git log --oneline
+  164  git merge case1 case2
+  165  git mergetool
+  166  cd c:
+  167  git 23project
+  168  cd 23project
+  169  git checkout -d case1
+  170  cd c:
+  171  cd 23project
+  172  mkdir 23project
+  173  cd 23project
+  174  git init
+  175  vi new.c
+  176  git add .
+  177  git commit -m "created a file new.c"
+  178  vi new.c
+  179  git add .
+  180  git commit -m "Added the main code"
+  181  git log --oneline
+  182  cat new.c
+  183  git checkout -b case1
+  184  cat new.c
+  185  vi new.c
+  186  cat new.c
+  187  vi new.c
+  188  git branch case2
+  189  git checkout case2
+  190  cat new.c
+  191  vi new.c
+  192  git add .
+  193  git commit -m "added two more cases in branch case2"
+  194  cat new.c
+  195  git checkout case1
+  196  cat new.c
+  197  git checkout case2
+  198  cat new.c
+  199  git checkout case1
+  200  git branch -d case1
+  201  git checkout case2
+  202  git branch -d case2
+  203  cd c:
+  204  mkdir 23project
+  205  cd 23project
+  206  git init
+  207  vi new.c
+  208  git add .
+  209  git commit -m "new file created"
+  210  vi new.c
+  211  git add .
+  212  git commit -m "added the main code"
+  213  git checkout -b case1
+  214  vi new.c
+  215  git add .
+  216  git commit -m "Added two cases in branch case1"
+  217  git checkout -b case2
+  218  ls
+  219  cat new.c
+  220  vi new.c
+  221  cat new.c
+  222  git add .
+  223  git commit -m "two more cases added in branch case2"
+  224  git checkout case1
+  225  ls
+  226  git log --oneline
+  227  git add .
+  228  git status
+  229  git merge case1 case2
+  230  cat new.c
+  231  git status
+  232  vi new.c
+  233  git add .
+  234  git commit -m "merging done'
+  235  vi new.c
+  236  git add .
+  237  git commit -m "added a comment"
+  238  git add .
+  239  git commit -m "merging completed"
+  240  cd c:
+  241  cd 23feb
+  242  cd c:
+  243  cd 23
+  244  cd 23feb
+  245  ls
+  246  git branch
+  247  cat hello.txt
+  248  git checkout dev1
+  249  git merge dev1 dev21
+  250  git log --oneline
+  251  git merge master dev1
+  252  git merge master dev21
+  253  cd c:
+  254  cd 23project
+  255  git checkout master
+  256  git checkout case1
+  257  vi new.c
+  258  git merge master case1
+  259  vi new.c
+  260  git add .
+  261  git commit -m "a comment added"
+  262  git checkout master
+  263  vi new.c
+  264  git add .
+  265  git commit -m "a bracket removed"
+  266  git checkout case1
+  267  git merge master case1
+  268  git mergetool
+  269  ls
+  270  git status
+  271  git commit -m "merging completed
+  272  C
+  273  git commit -m "merging completed"
+  274  cd c:
+  275  cd 23feb
+  276  git checkout master
+  277  git checkout dev21
+  278  git checkout master
+  279  git remote add origin https://github.com/Arshia-163/scm_23feb.git
+  280  git push -u master
+  281  git push -u origin master
+  282   git remote add dev1 https://github.com/Arshia-163/scm_23feb.git
+  283  git push -u dev1 dev1
+  284  cd ..
+  285  mkdir clone_1
+  286  cd clone_1
+  287  pwd
+  288  git status
+  289  git clone https://github.com/MonitKapoor/23feb.git
+  290  ls
+  291  cd 23feb
+  292  git checkout -b dev1
+  293  git branch
+  294  git pull
+  295  cd c:
+  296  mkdir clone_new
+  297  cd clone_new
+  298  git clone https://github.com/Arshia-163/16hfeb_class.git
+  299  ls
+  300  cd 16hfeb_class/
+  301  ls
+  302  git log --oneline
+  303  git branch
+  304  cd ..
+  305  cd project
+  306  cd project2
+  307  clear
+  308  cd git-project
+  309  cd ..
+  310  cd project
+  311  cd GitCourseG01
+  312  cd
+  313  cd project2
+  314  cd
+  315  cd c:
+  316  cd 16feb_class
+  317  cd project
+  318  ls
+  319  cd 16_feb/
+  320  ls
+  321  vi hello.txt
+  322  git add .
+  323  git init
+  324  git add .
+  325  git commit -m "text file created"
+  326  vi hello.c
+  327  cat hello.c
+  328  vi hello.txt
+  329  cat hello.txt
+  330  git add .
+  331  git status
+  332  git commit -m "both named hello"
+  333  git status
+  334   vi hello.c
+  335  git add .
+  336  git commit -m "added a comment"
+  337  git log --oneline
+  338  git checkout -b test
+  339  ls
+  340  cat hello. 
+  341  cat hello.c
+  342  git checkout master
+  343  git log
+  344  git checkout -b new
+  345  cat hello.c
+  346  cat hello.ttx
+  347  cat hello.txt
+  348  vi hello.c
+  349  cat hello.c
+  350  git status
+  351  git add .
+  352  git commit -m "added a comment in branch"
+  353  git checkout master
+  354  vi .gitignore
+  355  git add .gitignore
+  356  git commit -m "Added .gitignore to ignore specific files"
+  357  ls
+  358  ls -ah
+  359  vi hello.txt
+  360  git status
+  361  git add .
+  362  git status
+  363  git commit -m "texxt inserted"
+  364  git status
+  365  cd c:
+  366  cd 21feb
+  367  ls
+  368  cd  c:
+  369  cd project
+  370  cd 16_feb/
+  371  ls
+  372  vi .gitignore
+  373  git status
+  374  git commit -m "commit added"
+  375  git add .
+  376  git commit -m "commit added"
+  377  ls -ah
+  378  ls
+  379  git status
+  380  vi text.txt
+  381  git status
+  382  git config --get core.excludesfile
+  383  rm .gitignore
+  384  git add .gitignore
+  385  git commit -m "deleted"
+  386  ls
+  387  ls -ah
+  388  vi .gitignore
+  389  git status
+  390  git add .
+  391  git commit -m "ignored text.c file"
+  392  ls
+  393  ls -ah
+  394  vi text.txt
+  395  git status
+  396  cd c:
+  397  cd 21feb
+  398  ls
+  399  cd gitignore21
+  400  cd
+  401  cd c:
+  402  cd 21feb
+  403  ls
+  404  ls -ah
+  405  vi .gitignore
+  406  cd gitignore21
+  407  ls
+  408  vi main.c
+  409  git status
+  410  cd ..
+  411  git status
+  412  vi .gitignore
+  413  git status
+  414  git add .
+  415  git commit -m "folder ignored"
+  416  cd gitignore21
+  417  git status
+  418  mkdir dir
+  419  mkdir gitignore21
+  420  cd dir
+  421  cd ..
+  422  git status
+  423  cd ..
+  424  git status
+  425  mkdir dir
+  426  cd dir
+  427  mkdir gitignore21
+  428  cd gitignore21
+  429  touch hello.txt
+  430  cd ..
+  431  cd ..
+  432  git status
+  433  vi .gitignore
+  434  git status
+  435  vi .gitignore
+  436  git status
+  437  cd dir
+  438  mkdir notes
+  439  git ststus
+  440  git status
+  441  cd notes
+  442  git status
+  443  cd ..
+  444  cd ..
+  445  git status
+  446  vi .gitignore
+  447  git status
+  448  cd dir
+  449  rm -rf gitignore21
+  450  ls
+  451  cd ..
+  452  git status
+  453  vi .gitignore
+  454  git status
+  455  git add .
+  456  git commit -m "commited"
+  457  git status
+  458  cd dir
+  459  cd notes
+  460  touch main.c
+  461  git status
+  462  cd ..
+  463  git status
+  464  cd c..
+  465  cd ..
+  466  git status
+  467  cd dir
+  468  mkdir gitignore21
+  469  touch text.txt
+  470  git status
+  471  cd ..
+  472  git status
+  473  vi .gitignore
+  474  cd dir
+  475  cd gitignore21
+  476  git status
+  477  cd ..
+  478  git status
+  479  git add .
+  480  git commit-m "dir tracked"
+  481  git commit -m "dir tracked"
+  482  git status
+  483  cd gitignore21
+  484  vi new.txt
+  485  git status
+  486  cd ..
+  487  git status
+  488  ls
+  489  rm -rf notes
+  490  ls
+  491  git remote add origin https://github.com/Arshia-163/16feb.git
+  492  git push -u origin master
+  493  cd .
+  494  cd ..
+  495  ls
+  496  cd c:
+  497  cd 21feb
+  498  cd dir
+  499  ls
+  500  cd c:
+  501  mkdir Assess_0045
+  502  pwd
+  503  mkdir img
+  504  rm -rf img
+  505  ls
+  506  clear
+  507  cd Asses_0045
+  508  cd Assess_0045
+  509  mkdir img
+  510  pwd
+  511  cd ..
+  512  cd Assess_0045
+  513  git init
+  514  vi hello.c
+  515  vi new.txt
+  516  touch image.jpg
+  517  touch main.html
+  518  vi hello.c
+  519  vi new.txt
+  520  git status
+  521  git add .
+  522  git rm main.html
+  523  git status
+  524  git add .
+  525  git status
+  526  git commit -m "First file created"
+  527  vi hello.c
+  528  git add .
+  529  git commit -m "hello.c is modified"
+  530  vi new.txt
+  531  git status
+  532  git status
+  533  git add .
+  534  git add .
+  535  git commit -m "changes added"
+  536  git remote add origin https://github.com/Arshia-163/ArshiaSharma16.git
+  537  git push -u origin master
+  538  vi .gitignore
+  539  cd img
+  540  vi hello.c
+  541  vi new.txt
+  542  vi image.jpg
+  543  vi main.html
+  544  vi new.txt
+  545  ls
+  546  ls -ah
+  547  git status
+  548  cd ..
+  549  git status
+  550  cd img
+  551  git status
+  552  cd ..
+  553  git add .
+  554  git commit -m "gitignore successfully done"
+  555  history > log.txt
+  556  history >> log.txt
+  557  history >>log1.txt
+  558  git status
+  559  git add log.txt
+  560  git add log1.txt
+  561  vi .gitignore
+  562  git commit -m "git ignore"
+  563  git add log.txt
+  564  git add log1.txt
+  565  git commit -m "history added"
+  566  git add .
+  567  git commit -m "some change ingnore file"
+  568  mkdir screenshot
+  569  cd screenshot
+  570  C:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot (182).png
+  571  history >>log1.txt
